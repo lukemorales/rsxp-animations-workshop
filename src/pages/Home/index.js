@@ -35,10 +35,7 @@ export default function Home() {
 
   return (
     <>
-      <Container
-        exit="exit"
-        variants={{ exit: { transition: { staggerChildren: 0.1 } } }}
-      >
+      <Container>
         <Header>
           <motion.a
             href="https://rocketseat.com.br/experience"
@@ -47,7 +44,6 @@ export default function Home() {
             initial={{ x: -500 }}
             animate={{ x: 0 }}
             transition={{ ...spring, mass: 1.8 }}
-            exit={{ x: -500, opacity: 0 }}
           >
             <img
               src="https://rocketseat.com.br/static/images/experience/logo.svg"

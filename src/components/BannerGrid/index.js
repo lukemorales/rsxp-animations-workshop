@@ -9,7 +9,9 @@ export default function BannerGrid({ banners, left, up, down }) {
     visible: {
       opacity: 1,
       transition: {
+        delay: 0.5,
         staggerChildren: 0.15,
+        delayChildren: 1,
       },
     },
   };
@@ -32,7 +34,6 @@ export default function BannerGrid({ banners, left, up, down }) {
       down={down}
       initial="hidden"
       animate="visible"
-      exit="hidden"
       variants={listAnimation}
     >
       {banners.map(banner => (
